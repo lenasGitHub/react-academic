@@ -1,0 +1,102 @@
+.src-area {
+    position: relative;
+    height: 5rem;
+    width: 100%;
+    max-width: 27rem;
+    display: inline-block;
+    background: $color-white;
+    margin-bottom: 5rem;
+
+    &--input {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 0 4rem 0 2rem;
+        background: transparent;
+        outline: 0;
+        border: .2rem solid #d3d3d3;
+        border-radius: 4rem;
+        opacity: .4;
+    }
+
+    &--btn {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 1.4rem;
+        width: 4rem;
+        font-size: 1.2em;
+        opacity: .6;
+        z-index: 10;
+        outline: none;
+
+        i {
+            color: #d3d3d3;
+        }
+
+    }
+}
+
+.ftco-footer-widget-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
+}
+
+.fotc-src-area {
+    position: relative;
+    height: 5rem;
+    width: 100%;
+    max-width: 35rem;
+    display: inline-block;
+    background: #fff;
+    border-radius: 3px;
+
+    @include respond(phone) {
+        margin-top: 3rem;
+        
+        margin-right: 0 !important;
+    }
+
+    &--btn {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0px;
+        font-size: 1.2em;
+        z-index: 10;
+        outline: none;
+        width: 7rem;
+        background: #ee585b;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+
+        i {
+            color: #fff;
+        }
+    }
+
+    &--input {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 0 4rem 0 2rem;
+        background: transparent;
+        outline: 0;
+        opacity: .4;
+        border: none;
+    }
+&:first-child{
+    margin-right: 2rem;
+}
+}

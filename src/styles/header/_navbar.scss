@@ -1,0 +1,99 @@
+.navbar-brand img {
+    vertical-align: middle;
+    border-style: none;
+    height: auto;
+    max-width: 85%;
+}
+
+.navbar-nav {
+
+    a {
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+
+    i.fa-ellipsis-v {
+        display: none;
+
+        @include respond(tab-port) {
+            display: block
+        }
+    }
+
+    .mobile-event {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 7rem;
+    }
+}
+
+
+
+.collapse.navbar-collapse.show .navbar-nav > li > a {
+    padding: 1.2rem 0rem;
+}
+.collapse.navbar-collapse.show .navbar-nav > li {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.collapse.navbar-collapse.show .primary-btn2{
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.collapse.navbar-collapse.show .navbar-nav > li:last-child {
+
+    margin-bottom: 4rem;
+}
+
+
+
+
+.navbar-nav>li>a {
+    color: $color-dark-text;
+    position: relative;
+}
+
+.navbar-nav>li>a {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 3.4rem 0;
+}
+
+nav.navbar.navbar-expand-lg.navbar-nav.navbar-light {
+    padding: 0;
+
+    @include respond(tab-port) {
+        padding: .5rem 1rem;
+    }
+}
+
+.navbar-nav>li>a:hover {
+    color: $color-primary;
+}
+
+.mr-r {
+    margin-left: 2rem
+}
+
+li.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 98%;
+    left: -19px;
+    font-size: 1.5rem;
+    border-radius: .2rem;
+}
+
+.dropdown-item {
+    padding: 1.25rem 3.5rem;
+}

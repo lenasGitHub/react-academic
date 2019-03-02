@@ -1,0 +1,146 @@
+.default-header {
+  background-color: #fff;
+  width: 100% !important;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.025);
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.default-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  @include respond(tab-port) {
+    position: relative;
+  }
+}
+
+.menutop-wrap {
+  background-color: $color-grey-dark;
+
+  .menu-top .list.contact-list li {
+    padding: 1.5rem 0;
+    cursor: pointer;
+    margin-right: 3rem;
+  }
+
+  .menu-top .list.social-list li {
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    @media (max-width:991px) and (min-width:901px) {
+      padding: 1.1rem 1.3rem;
+    }
+    border-right: 1px solid #083846;
+
+    @include respond(tab-port) {
+      border-right: none
+    }
+
+  }
+
+  @include respond(phone) {
+    ul.list.social-list {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      border-top: 1px solid #083846;
+    }
+  }
+
+  .menu-top .list.social-list li:first-child {
+    border-left: 1px solid #083846;
+
+    @include respond(tab-port) {
+      border-left: none
+    }
+  }
+
+  @include respond(tab-port) {
+    display: none
+  }
+
+  @include respond(phone) {
+    .d-flex {
+      flex-direction: column;
+    }
+  }
+}
+
+.menu-top li {
+  display: inline-block;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.menutop-wrap a {
+  font-size: $small-font-size;
+  color: #7ca2af;
+}
+
+.menutop-wrap .contact-list i {
+  color: #fff;
+}
+
+.menutop-wrap .social-list i {
+  color: #82aab6;
+
+}
+
+.menutop-wrap .menu-top .list.social-list li.facebook:hover {
+  background-color: #3b5998
+}
+
+.menutop-wrap .menu-top .list.social-list li.twitter:hover {
+  background-color: #1da1f2
+}
+
+.menutop-wrap .menu-top .list.social-list li.linkedin:hover {
+  background-color: #007bb5
+}
+
+.menutop-wrap .menu-top .list.social-list li.google-plus:hover {
+  background-color: #db4437
+}
+
+.menutop-wrap .menu-top .list.social-list li:hover {
+  color: #fff
+}
+
+.menutop-wrap .list.contact-list i {
+  margin-right: 8px;
+}
+
+
+
+@include respond(tab-land) {
+  ul.list.social-list {
+    display: flex;
+    justify-content: space-around;
+    flex: 0 0 10%;
+  }
+}
+
+// @media (max-width:991px) and (min-width:600px) {
+//   .col-md-cus-4 {
+//       -ms-flex: 0 0 33% !important;
+//       flex: 0 0 33% !important;
+//       max-width: 33% !important;
+//       margin: 0 auto;
+//   }
+// }
+
+@media (max-width:767px) and (min-width:600px) {
+  .exprience-thumb img {
+    margin: 0 auto;
+    display: table;
+    text-align: center;
+  }
+}

@@ -1,0 +1,204 @@
+.ftco-footer {
+    font-size: 1.6rem;
+    padding-top: 5rem;
+    background: $color-primary-dark;
+    border-top: 1px solid #17414d;
+
+    p,
+    a {
+        color: $color-dark-text2;
+    }
+
+    .ftco-section {
+        position: relative;
+    }
+
+    .ftco-footer-row {
+
+        &--form {
+        }
+
+        &--contact {
+            padding: 5rem 0;
+            border-top: 1px solid $color-dark-border;
+
+            .list-about a {
+                color: $color-dark-text2;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid $color-dark-border;
+                margin-bottom: 1rem;
+                -webkit-transition: all .2s;
+                transition: all .2s;
+                font-size: 1.3rem;
+
+                i {
+                    margin-right: 1.5rem
+                }
+            }
+
+            .list-about li:last-child a {
+                border-bottom: none
+            }
+
+            .list-about a:hover {
+                color: $color-white;
+            }
+
+
+
+            .block-23 ul li,
+            .block-23 ul li>a {
+                display: table;
+                line-height: 1.5;
+            }
+
+            .block-23 ul li {
+                margin-bottom: 2.4rem;
+
+                i {
+                    color: $color-white;
+                    margin-right: 1.2rem;
+                    display: block;
+                    vertical-align: top;
+                }
+
+                span {
+                    color: $color-dark-text2;
+                    font-size: 1.5rem
+                }
+
+                .text {
+                    display: table-cell;
+                    vertical-align: top;
+                }
+            }
+
+            .footer-social-list {
+                margin: 0;
+                padding: 0 0 1rem;
+                margin-top: 4rem;
+
+                li {
+                    margin: 0 0 1rem;
+                    padding: 0;
+                    list-style: none;
+                    display: inline-block;
+
+                    a {
+                        color: $color-dark-text2;
+                        text-decoration: none;
+                        font-size: 2rem;
+                        display: inline-block;
+                        -webkit-transition: all .2s;
+                        transition: all .2s;
+                    }
+
+                    a:hover {
+                        color: $color-white;
+                    }
+                }
+
+                li:not(:last-child) {
+                    margin-right: 3rem;
+                }
+            }
+
+
+            .instafeed {
+                margin: -5px;
+                max-width: 30rem;
+
+                li {
+                    overflow: hidden;
+                    width: 33%;
+                }
+
+
+
+                img {
+                    vertical-align: middle;
+                    border-style: none;
+                    width: 100%
+                }
+
+                .blog-img>a {
+                    position: relative;
+                    display: block;
+                    border-radius: .4rem;
+                    overflow: hidden;
+                    margin: .4rem;
+                    font-size: 2.5rem
+                }
+
+                .blog-img>a:after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    background-color: $color-tertiary-light;
+                    opacity: 0;
+                    -webkit-transition: 0.2s opacity;
+                    transition: 0.2s opacity;
+                }
+
+                .blog-img>a:hover:after {
+                    opacity: 0.7;
+                }
+
+                .blog-img>a:hover .course-link-icon {
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    opacity: 1;
+                }
+
+                .blog-img .course-link-icon {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    -webkit-transform: translate(-50%, calc(-50% - 15px));
+                    -ms-transform: translate(-50%, calc(-50% - 15px));
+                    transform: translate(-50%, calc(-50% - 15px));
+                    width: 4rem;
+                    height: 4rem;
+                    line-height: 4rem;
+                    text-align: center;
+                    color: $color-white;
+                    opacity: 0;
+                    z-index: 10;
+                    -webkit-transition: 0.2s all;
+                    transition: 0.2s all;
+                }
+            }
+
+
+        }
+
+        &--copy-right {
+            .copyRight {
+                border-top: 1px solid $color-dark-border;
+                padding: 24px 0;
+                margin: 0;
+
+                i.fa.fa-heart {
+                    color: $color-primary;
+                    padding: 0 .7rem;
+                }
+            }
+        }
+    }
+}
+
+.ftco-footer--course-card {
+    .heading--sub {
+        &--duration {
+            color: $color-dark-text2;
+        }
+    }
+
+    h3.heading--top a {
+        color: $color-white;
+    }
+}

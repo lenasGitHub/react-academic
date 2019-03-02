@@ -1,0 +1,138 @@
+.professors-info {
+    background: $color-white;
+    position: relative;
+    padding: 10rem 0;
+
+    &-wraper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-bottom: 9rem;
+
+        ul.list.social-list {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            background-color: $color-dark-border;
+            z-index: 99;
+            width: 56px;
+            text-align: center;
+            justify-content: stretch;
+            align-items: stretch;
+            height: 100%;
+
+            @include respond(phone) {
+                flex-direction: row;
+                height: 56px;
+                width: 100%;
+                justify-content: space-evenly;
+                bottom: 0
+            }
+
+            @media (max-width:767px) and (min-width:600px) {
+                flex-direction: row;
+                height: 56px;
+                width: 100%;
+                justify-content: space-evenly;
+                bottom: 0
+            }
+
+            li {
+                padding: 24px 10px;
+                color: $color-white
+            }
+        }
+    }
+
+    &--image {
+        width: 40%;
+        overflow: hidden;
+        position: relative;
+
+        @include respond(phone) {
+            width: 100%;
+        }
+
+        .image-bg {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+            width: 100%;
+
+            @include respond(phone) {
+                position: relative;
+                left: 0;
+                top: 0;
+                transform: unset;
+            }
+
+            img {
+                min-width: 100%;
+                min-height: 100%;
+            }
+        }
+    }
+
+    &--text {
+        width: 60%;
+        background-color: $color-gray-seaction-team;
+        padding: 2.5rem 6rem 4.5rem 4.6rem;
+
+        @include respond(phone) {
+            width: 100%;
+            padding: 2.5rem 3rem 4.5rem 3rem;
+        }
+
+        h3, h5{
+            @include respond(phone) {
+                text-align: center
+            }
+        }
+
+        .text-description {
+            margin-top: 3rem;
+            color: $color-dark-text
+        }
+    }
+}
+
+
+.experiential-widget--rang {
+    .progress-bar-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.1rem;
+    }
+
+    .experiential-widget--range-gauge--fill {
+        display: flex;
+        margin-bottom: 2.7rem;
+
+        .tenth_separator {
+            flex: 1 1 auto;
+            background: $color-grey-light-7;
+            height: 2.7rem;
+            border: 2px solid $color-grey-light-8;
+            box-sizing: border-box;
+            border-right: none;
+        }
+
+        .tenth_separator:last-child {
+            border-right: 2px solid $color-grey-light-8;
+        }
+
+        .fill {
+            background: $color-primary;
+            border: 2px solid $color-primary-border;
+        }
+    }
+}
+
+.styles_modal__gNwvD .professors-info--text {
+    padding: 3rem 2rem;
+}

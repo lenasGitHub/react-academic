@@ -1,6 +1,70 @@
-@import 'variables.scss';
-@import 'header/header.scss';
+@import "abstracts/variables.scss";
+@import "abstracts/mixins";
 
-body {
-    background: $main-black-color !important;
+
+@import "base/typography.scss";
+@import "base/base.scss";
+
+@import "layout/footer.scss";
+@import "layout/team.scss";
+@import "layout/reviews.scss";
+@import "layout/professorsInfo.scss";
+
+
+@import 'header/header.scss';
+@import 'header/courseHeader.scss';
+@import 'header/navbar.scss';
+
+
+@import 'components/leftcard.scss';
+@import 'components/form.scss';
+@import 'components/courseCard.scss';
+@import 'components/slick.scss';
+
+
+
+@import 'shared/card.scss';
+
+
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+
+.card-panel {
+    margin: 0;
+    padding: 60px;
+}
+
+.about-area .primary-btn2 {
+    color: #fff;
+}
+
+.header-btn {
+    background-color: #fff;
+    border: 1px solid transparent;
+    color: #000;
+}
+
+.primary-btn2 {
+    color: #fff;
+    font-weight: 600;
+    border: .1rem solid #f4f4f4;
+    padding: 1rem 3rem;
+    border-radius: .6rem;
+    text-transform: capitalize !important;
+}
+
+.primary-btn2 {
+    background-color: #ec595f;
+}
+
+.primary-btn2:hover {
+    opacity: .8;
+    color: #fff
+}
+
+.text-color {
+    color: #425961;
 }

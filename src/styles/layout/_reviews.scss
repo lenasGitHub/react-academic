@@ -1,0 +1,74 @@
+.course-reviews {
+    background: $color-white;
+    position: relative;
+    padding: 10rem 0;
+
+    .single-testimonial {
+        background-color: #fff;
+        padding: 25px 30px 12px 30px;
+        position: relative;
+
+        .double-quotation {
+            margin-right: 30px;
+        }
+
+        .double-quotation::before {
+            content: "\201C";
+            position: absolute;
+            top: 18px;
+            line-height: 1;
+            font-size: 7rem;
+            color: $color-tertiary-dark;
+            font-family: sans-serif;
+            z-index: 1;
+        }
+
+        .review-comment {
+            padding-left: 4rem;
+
+            &--content {
+                font-size: 1.3rem;
+                color: $color-dark-text;
+                line-height: 2.5rem;
+                margin-bottom: 2.5rem;
+            }
+
+            &--author-avatar {
+
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top center;
+                background-image: url(https://technext.github.io/webuni/img/authors/3.jpg);
+            }
+
+
+            &--detail-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                font-size: $small-font-size;
+
+                p {
+                    padding-left: 2.2rem;
+                    margin-bottom: 0;
+
+                    span {
+                        color: $color-primary;
+                        clear: both;
+                        display: block;
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.ca-pic {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    float: left;
+}

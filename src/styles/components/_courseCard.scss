@@ -1,0 +1,36 @@
+.course-item-card .blog-img img {
+    display: block;
+    height: 7rem;
+    width: 7rem;
+    border-radius: .7rem;
+}
+
+.course-item-card .heading {
+    width: calc(100% - 100px);
+
+    &--top a {
+        font-size: $default-font-size;
+        line-height: 1.4;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        color: $color-dark-text;
+    }
+
+    &--top a:hover {
+        color: $color-primary;
+    }
+
+    &--sub {
+        font-size: $small-font-size;
+        color: $color-tertiary-dark;
+
+    }
+
+    &--price {
+        color: $color-primary
+    }
+
+    .meta {
+        margin-top: 1.2rem
+    }
+}
