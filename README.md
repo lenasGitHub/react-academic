@@ -8,7 +8,6 @@ that have two pages courses, professors, includes there css(scss) files, images,
 
 ## [Documentation]
 
-
 ### Development
 
 Want to run demos locally
@@ -21,9 +20,7 @@ npm start
 open http://localhost:8080
 ```
 
-
 ## [Task 2]
-
 
 ### (Writing. Non-Coding)
 
@@ -56,4 +53,4 @@ Angular itself is easier to learn & work with, for smaller projects than React.
 4- React Native is more stable and feels like a native app.
 ```
 
-#### Ionic 2 and React Native both are meant for the same purpose but different project requirements. If you are looking for performance, responsiveness and want a natively rendering app, there’s no doubt React Native is the one for you. On the other hand, if you are low on time, budget and looking for support of Native Browser apps and fine with compromising performance, then go with Ionic 2.
+#### Ionic 2 and React Native both are meant for the same purpose but different project requirements. If you are looking for performance, responsiveness and want a natively rendering app, there’s no doubt React Native is the one for you. On the other hand, if you are low on time, budget and looking for support of Native Browser apps and fine with compromising performance, then go with Ionic 2....
